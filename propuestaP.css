@@ -5,12 +5,8 @@
 html,
 body {
   height: 100%;
-  background-color: #333;
-  background: url('cover.jpg') no-repeat center center fixed;  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-color: #7532a8;
+  
 
 }
 
@@ -19,13 +15,12 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.5);
 }
 
+html,
+header {
+  color:  #eb34a1;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.377);
+}
 
-/*body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background-color: #333;
-  }*/
-  
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
@@ -51,6 +46,7 @@ body {
     min-width: 100%;
     height: 32rem;
   }
+
   
   /* Links */
     a,
