@@ -5,6 +5,10 @@ body {
     padding-bottom: 3rem;
     color: #5a5a5a;
   }
+header {  
+  color: #eb34a1;
+  font-family: Segoe UI;
+}
   
   
   /* CUSTOMIZE THE CAROUSEL
