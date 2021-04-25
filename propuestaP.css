@@ -21,6 +21,10 @@ header {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.377);
 }
 
+html,
+.class-inner {
+color:rgba(0, 0, 0, 0.822)
+}
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
