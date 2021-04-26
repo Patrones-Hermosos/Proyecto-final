@@ -21,10 +21,17 @@ header {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.377);
 }
 
-html,
-.class-inner {
-color:rgba(0, 0, 0, 0.822)
-}
+  .carousel-caption p { /* cambiar el texto del parrafo en el carousel */ 
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.897255, 255, 255, 0.774);
+  }
+
+  .carousel-caption h1 { /* cambiar el texto del header en el carousel */ 
+    font-size: 3rem;
+    color:  #000000;
+  }
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
