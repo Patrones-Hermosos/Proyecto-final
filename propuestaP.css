@@ -32,7 +32,9 @@ header {
     font-size: 3rem;
     color:  #000000;
   }
-  
+  .carousel-caption p {
+    color:black
+  }
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   
