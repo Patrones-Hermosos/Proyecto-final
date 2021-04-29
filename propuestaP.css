@@ -16,7 +16,7 @@ body {
 }
 
 html,
-header {
+h1 {
   color:  #eb34a1;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.377);
 }
@@ -70,7 +70,7 @@ color:rgba(0, 0, 0, 0.822)
       margin-bottom: 1.25rem;
       font-size: 1.25rem;
       line-height: 1.4;
-      color: white;
+      color: blue;
     }
 
     .carousel-caption h1 { /* cambiar el texto del header en el carousel */ 
