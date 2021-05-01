@@ -16,10 +16,11 @@ body {
 }
 
 html,
-header {
-  color:  #eb34a1;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.377);
-}
+h1 {
+    color:  #eb34a1;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.377);
+  }
+  
   .carousel-caption p { /* cambiar el texto del parrafo en el carousel */ 
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
