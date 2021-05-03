@@ -25,16 +25,18 @@ h1 {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
-    color: rgba(255, 255, 255, 0.897255, 255, 255, 0.774);
+    color: rgb(252, 253, 255);
   }
 
   .carousel-caption h1 { /* cambiar el texto del header en el carousel */ 
     font-size: 3rem;
-    color:  #000000;
-  }
-  .carousel-caption p {
-    color:black
-  }
+    color: rgb(17, 17, 189);
+  } 
+  html,
+.class-inner {
+color:rgba(0, 0, 0, 0.822)
+}
+  
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   
