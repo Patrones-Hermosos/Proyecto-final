@@ -1,5 +1,5 @@
 <!--Signo de suma-->
-<div id="rectángulo 1" style="
+<div id="r0" style="
 z-index: 5;
 position: absolute;
 left: 400px;
@@ -10,7 +10,7 @@ border-radius: 0%;
 background: rgb(252, 240, 3);">
 </div>
 
-<div id="rectángulo 2" style="
+<div id="r1" style="
 z-index: 5;
 position: absolute;
 left: 400px;
@@ -21,8 +21,9 @@ border-radius: 0%;
 background: rgb(252, 240, 3);
 transform: rotate(90deg)">
 </div>
+
 <!--Signo de resta-->
-<div id= "resta" style="
+<div id= "r2" style="
 z-index: 5;
 position: absolute;
 left: 600px;
@@ -33,7 +34,7 @@ border-radius: 0%;
 background: rgb(255, 13, 13);">
 </div>
 <!--Signo de multiplicación-->
-<div id="rectángulo 4" style="
+<div id="r3" style="
 z-index: 5;
 position: absolute;
 left: 200px;
@@ -44,7 +45,7 @@ border-radius: 0%;
 background: rgb(245, 94, 0);
 transform: rotate(45deg)">
 </div>
-<div id="rectángulo 5" style="
+<div id="r4" style="
 z-index: 5;
 position: absolute;
 left: 200px;
@@ -56,7 +57,7 @@ background: rgb(245, 94, 0);
 transform: rotate(140deg)">
 </div>
 <!--Signo de división-->
-<div id="círculo" style="
+<div id="r5" style="
 z-index: 5;
 position: absolute;
 left: 450px;
@@ -66,7 +67,7 @@ height: 100px;
 border-radius: 50%;
 background: rgb(43, 14, 173);">
 </div>
-<div id="rectángulo 6" style="
+<div id="r6" style="
 z-index: 5;
 position: absolute;
 left: 350px;
@@ -76,7 +77,7 @@ height: 100px;
 border-radius: 0%;
 background: rgb(43, 14, 173);">
 </div>
-<div id="rectángulo 7" style="
+<div id="r7" style="
 z-index: 5;
 position: absolute;
 left: 450px;
@@ -84,35 +85,55 @@ top: 700px;
 width: 100px;
 height: 100px;
 border-radius: 50%;
-background: rgb(43, 14, 173);">
+background: #2b0ead;">
 </div>
 <script>
+
+
+
+  
+// leemos cada div id y lo guardamos en la lista simbolo
+var simbolo = [];
+  for(w=0;w<=7;w++){
+    simbolo[w] = document.getElementById('r'.concat(w));
+  }
+
+  // empezamos el setInterval()
+  setInterval(function(){
+      // pasamos a traves de la lista simbolo
+    for(w=0;w<=7;w++){
+        // cambiamos el color de una manera aleatoria
+        // estamos cambiando colores usando el sistema de hexadecimal y por eso necesitamos concatenar un "#" con el color
+        simbolo[w].style.background = "#" + Math.floor(Math.random()*16777215).toString(16);
+    }
+  },300)
+ 
+    // var canvas = document.getElementById("rectangulo 1");
+    // var ctx = canvas.getContext("2d");
+ 
+    //  var color = ["Red", "Pink", "Blue", "SkyBlue", "Grey"];
+ 
+    //  ctx.fillStyle = color [Math.floor(Math.random() * color.length)];
+ 
+    //   var tamano = 0;
+    //   var position = 0;
+    //   var clicks = 0;
  
  
-    var canvas = document.getElementById("rectangulo 1");
-    var ctx = canvas.getContext("2d");
+    // setInterval(function () {
+    //     ctx.clearRect(0, 0, 400, 400);
+    //     ctx.fillRect(position, 0, tamano, 400-tamano);
+
+    //     ctx.fillStyle = color [Math.floor(Math.random() * color.length)];
  
-     var color = ["Red", "Pink", "Blue", "SkyBlue", "Grey"];
+    //     position++;
+    //     tamano++;
  
-     ctx.fillStyle = color [Math.floor(Math.random() * color.length)];
- 
-      var tamano = 0;
-      var position = 0;
-      var clicks = 0;
- 
- 
-    setInterval(function () {
-        ctx.clearRect(0, 0, 400, 400);
-        ctx.fillRect(position, 0, tamano, 400-tamano);
- 
-        position++;
-        tamano++;
- 
-        if (position > 400){
-            position = 0;
-            tamano = 0;
-        }
-    }, 20);
+    //     if (position > 400){
+    //         position = 0;
+    //         tamano = 0;
+    //     }
+    // }, 20);
  
  
         </script>
