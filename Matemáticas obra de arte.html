@@ -86,3 +86,33 @@ height: 100px;
 border-radius: 50%;
 background: rgb(43, 14, 173);">
 </div>
+<script>
+ 
+ 
+    var canvas = document.getElementById("rectangulo 1");
+    var ctx = canvas.getContext("2d");
+ 
+     var color = ["Red", "Pink", "Blue", "SkyBlue", "Grey"];
+ 
+     ctx.fillStyle = color [Math.floor(Math.random() * color.length)];
+ 
+      var tamano = 0;
+      var position = 0;
+      var clicks = 0;
+ 
+ 
+    setInterval(function () {
+        ctx.clearRect(0, 0, 400, 400);
+        ctx.fillRect(position, 0, tamano, 400-tamano);
+ 
+        position++;
+        tamano++;
+ 
+        if (position > 400){
+            position = 0;
+            tamano = 0;
+        }
+    }, 20);
+ 
+ 
+        </script>
