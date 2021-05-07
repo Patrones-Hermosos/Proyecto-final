@@ -1,0 +1,187 @@
+<div id= "1" style="
+z-index: 5;
+position: absolute;
+left: 250px;
+top: 125px;
+width: 300px;
+height: 150px;
+border-radius: 0%;
+background: rgb(77, 75, 75);">
+</div>
+
+<div id= "2" style="
+z-index: 5;
+position: absolute;
+left: 330px;
+top: 275px;
+width: 130px;
+height: 30px;
+border-radius: 0%;
+background: rgb(63, 62, 62);">
+</div>
+
+<div id= "3" style="
+z-index: 5;
+position: absolute;
+left: 295px;
+top: 305px;
+width: 200px;
+height: 45px;
+border-radius: 0%;
+background: rgb(77, 75, 75);">
+</div>
+
+<div id= "4" style="
+z-index: 5;
+position: absolute;
+left: 275px;
+top: 150px;
+width: 250px;
+height: 100px;
+border-radius: 0%;
+background:rgb(252, 248, 251);">
+</div>
+
+
+<div id= "5" style="
+z-index: 5;
+position: absolute;
+left: 290px;
+top: 170px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+
+<div id= "6" style="
+z-index: 5;
+position: absolute;
+left: 290px;
+top: 195px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+
+<div id= "7" style="
+z-index: 5;
+position: absolute;
+left: 290px;
+top: 220px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id= "8" style="
+z-index: 5;
+position: absolute;
+left: 310px;
+top: 170px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id= "9" style="
+z-index: 5;
+position: absolute;
+left: 310px;
+top: 195px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id= "10" style="
+z-index: 5;
+position: absolute;
+left: 310px;
+top: 220px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id= "11" style="
+z-index: 5;
+position: absolute;
+left: 345px;
+top: 220px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id= "12" style="
+z-index: 5;
+position: absolute;
+left: 370px;
+top: 220px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id="13" style="
+  z-index:5;
+  position:absolute;
+  left:495px;
+  top:215px;
+  width:25px;
+  height:25px;
+  border-radius:38%;
+  background:blueviolet">
+</div>
+
+<div id="14" style="
+  z-index:5;
+  position:absolute;
+  left:470px;
+  top:160px;
+  width:50px;
+  height:45px;
+  border-radius:38%;
+  background:blueviolet">
+</div>
+
+
+<div id="15" style="
+  z-index:5;
+  position:absolute;
+  left:345px;
+  top:170px;
+  width:40px;
+  height:40px;
+  border-radius:0%;
+  background:blueviolet">
+</div>
+
+
+<script>
+    var simbolo = [];
+    var colors = ['DeepSkyBlue', 'Yellow','DarkMagenta', 'Red', 'LimeGreen'];
+      for(w=5;w<=15;w++){
+        simbolo[w] = document.getElementById(w);
+      }
+    
+      setInterval(function(){
+        var col=Math.floor(Math.random() * colors.length);
+        for(w=5;w<=15;w++){      
+            simbolo[w].style.backgroundColor = colors[col];
+        }
+      },150)
+    
+    
+    </script>
+
