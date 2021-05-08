@@ -592,14 +592,14 @@ position:absolute;
 <script>
 var simbolo = [];
 var colors = ['DodgerBlue','MidnightBlue','LightSeaGreen','PaleGreen','MediumVioletRed'];
-  for(w=2;w<=4;w++){
-    simbolo[w] = document.getElementById(w);
+  for(j=2;j<=4;j++){
+    simbolo[j] = document.getElementById(j);
   }
 
   setInterval(function(){
     var col=Math.floor(Math.random() * colors.length);
-    for(w=2;w<=4;w++){      
-        simbolo[w].style.backgroundColor = colors[col];
+    for(j=2;j<=4;j++){      
+        simbolo[j].style.backgroundColor = colors[col];
     }
   },400)
 
