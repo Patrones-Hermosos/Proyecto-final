@@ -404,7 +404,110 @@
        for (i=1; i<10; i++){
          document.getElementById(i).style.background = color;}},700)
    </script>
+<!--Signo de suma-->
+<div id="r0" style="
+z-index: 5;
+position: absolute;
+left: 1195px;
+top: 2000px;
+width: 200px;
+height: 100px;
+border-radius: 0%;
+background: rgb(252, 240, 3);">
+</div>
 
+<div id="r1" style="
+z-index: 5;
+position: absolute;
+left: 1195px;
+top: 2000px;
+width: 200px;
+height: 100px;
+border-radius: 0%;
+background: rgb(252, 240, 3);
+transform: rotate(90deg)">
+</div>
+<!--Signo de resta-->
+<div id= "r2" style="
+z-index: 5;
+position: absolute;
+left:900px;
+top: 2250px;
+width: 200px;
+height: 100px;
+border-radius: 0%;
+background: rgb(255, 13, 13);">
+</div>
+<!--Signo de multiplicación-->
+<div id="r3" style="
+z-index: 5;
+position: absolute;
+left: 1170px;
+top: 2250px;
+width: 200px;
+height: 100px;
+border-radius: 0%;
+background: rgb(245, 94, 0);
+transform: rotate(45deg)">
+</div>
+<div id="r4" style="
+z-index: 5;
+position: absolute;
+left: 1170px;
+top: 2250px;
+width: 200px;
+height: 100px;
+border-radius: 0%;
+background: rgb(245, 94, 0);
+transform: rotate(140deg)">
+</div>
+<!--Signo de división-->
+<div id="r5" style="
+z-index: 5;
+position: absolute;
+left: 900px;
+top: 1800px;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background: rgb(43, 14, 173);">
+</div>
+<div id="r6" style="
+z-index: 5;
+position: absolute;
+left: 825px;
+top: 1900px;
+width: 250px;
+height: 100px;
+border-radius: 0%;
+background: rgb(43, 14, 173);">
+</div>
+<div id="r7" style="
+z-index: 5;
+position: absolute;
+left: 900px;
+top: 2000px;
+width: 100px;
+height:100px;
+border-radius: 50%;
+background: rgb(43, 14, 173);">
+</div>
+<script>
+var simbolo = [];
+  for(w=0;w<=7;w++){
+    simbolo[w] = document.getElementById('r'.concat(w));
+  }
+
+  // empezamos el setInterval()
+  setInterval(function(){
+      // pasamos a traves de la lista simbolo
+    for(w=0;w<=7;w++){
+        // cambiamos el color de una manera aleatoria
+        // estamos cambiando colores usando el sistema de hexadecimal y por eso necesitamos concatenar un "#" con el color
+        simbolo[w].style.background = "#" + Math.floor(Math.random()*16777215).toString(16);
+    }
+  },1000)
+ </script>
      <!-- Niña sentada -->
      <div class="col-12">
       <p style="text-align: center;" > <img src="Niña_sentada.png" alt="imagen 1" height="200%"></p>
