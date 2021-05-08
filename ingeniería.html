@@ -1,0 +1,161 @@
+
+     <!-- Ingeniería -->
+     <div id="foco">
+        <div id="1" style="
+        z-index: 0;
+        position: absolute;
+        top: 500%;
+        left: 50.1%;
+        border-radius: 50% / 70% 80% 40% 40%;
+        border: 1px solid black;
+        background: gold;
+        box-shadow: 0px 0px 5px 5px white inset;
+        height: 150px;
+        width: 100px;"></div>
+        <div style="
+        z-index: 5;
+        position: absolute;
+        top: 493%;
+        left: 49.6%;
+        border-radius: 20px;
+        background: gray;
+        border: 1px solid black;
+        box-shadow: 0px 0px 1px 1px black inset;
+        margin: 2%;
+        height: 10px;
+        width: 60px;"></div>
+        <div style="
+        z-index: 4;
+        position: absolute;
+        top: 491%;
+        left: 49.6%;
+        border-radius: 20px;
+        background: gray;
+        border: 1px solid black;
+        box-shadow: 0px 0px 1px 1px black inset;
+        margin: 2%;
+        height: 10px;
+        width: 60px;"></div>
+        <div style="
+        z-index: 3;
+        position: absolute;
+        top: 489%;
+        left: 49.6%;
+        border-radius: 20px;
+        background: gray;
+        border: 1px solid black;
+        box-shadow: 0px 0px 1px 1px black inset;
+        margin: 2%;
+        height: 10px;
+        width: 60px;"></div>
+        <div style="
+        z-index: 2;
+        position: absolute;
+        top: 486.5%;
+        left: 50.4%;
+        background: gray;
+        border: 1px solid black;
+        box-shadow: 0px 0px 1px 1px black inset;
+        margin: 2%;
+        height: 10px;
+        border-top-left-radius: 50% 100%;
+        border-top-right-radius: 50% 100%;
+        width: 40px;"></div>
+   </div>
+   <div id="casco">
+     <div id="2" style="
+     z-index: 0;
+     position: absolute;
+     top: 500%;
+     left: 30%;
+     background: orangered;
+     border: 1px solid black;
+     box-shadow: 0px 0px 10px 10px white inset;
+     height: 120px;
+     border-top-left-radius: 50% 100%;
+     border-top-right-radius: 50% 100%;
+     width: 220px; "
+     ></div>
+     <div id="3" style="
+     z-index: 1;
+     position: absolute;
+     top: 530%;
+     left: 28.5%;
+     border-radius: 20px;
+     background: orangered;
+     border: 1px solid black;
+     box-shadow: 0px 0px 2px 2px white inset;
+     height: 20px;
+     width: 260px;"
+     ></div>
+     <div id="4" style="
+     z-index: 0;
+     position: absolute;
+     top: 522%;
+     left: 45%;
+     border-radius:  20%;
+     border: 1px solid black;
+     background: orangered;
+     box-shadow: 0px 0px 2px 2px white inset;
+     height: 30px;
+     width: 25px;"
+     ></div>
+     <div id="5" style="
+     z-index: 0;
+     position: absolute;
+     top: 522%;
+     left: 29.5%;
+     border-radius:  20%;
+     border: 1px solid black;
+     background: orangered;
+     box-shadow: 0px 0px 2px 2px white inset;
+     height: 30px;
+     width: 25px;"
+     ></div>
+     <div id="6" style="
+     z-index: 0;
+     position: absolute;
+     top: 498%;
+     left: 36.5%;
+     border-radius:  20%;
+     border: 1px solid black;
+     background: orangered;
+     box-shadow: 0px 0px 5px 5px white inset;
+     height: 90px;
+     width: 48px;"
+     ></div>
+     <div id="7" style="
+     z-index: 0;
+     position: absolute;
+     top: 502%;
+     left: 33%;
+     border-radius: 20%;
+     border: 1px solid black;
+     background: orangered;
+     box-shadow: 0px 0px 5px 5px white inset;
+     height: 60px;
+     width: 40px;"
+     ></div>
+     <div id="8" style="
+     z-index: 0;
+     position: absolute;
+     top: 502%;
+     left: 40.6%;
+     border-radius: 20%;
+     border: 1px solid black;
+     background: orangered;
+     box-shadow: 0px 0px 5px 5px white inset;
+     height: 60px;
+     width: 40px;"
+     ></div>
+   </div>
+
+   <script>
+     setInterval(function(){
+       var r = Math.floor(255*(Math.random()));
+       var g = Math.floor(255*(Math.random()));
+       var b = Math.floor(255*(Math.random()));        
+       var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+       for (i=1; i<10; i++){
+         document.getElementById(i).style.background = color;}},700)
+   </script>
