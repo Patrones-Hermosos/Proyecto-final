@@ -517,7 +517,94 @@ var simbolo = [];
 
 </div>
 <!-- imagen obra -->
+<!-- quimica -->
+<div id="0" style="
+ z-index:5;
+  position:absolute;
+   left:460px;
+    top:1520px;
+     width:103px;
+      height:103px;
+       border-radius:50%;
+        background: rgb(211, 234, 255)">
+      
+</div>
 
+<div id="1" style="
+ z-index:5;
+  position:absolute;
+   left:489px;
+    top:1480px;
+     width:38px;
+       height:70px;
+        background: rgb(211, 234, 255)">
+      
+    </div>
+
+ </div>
+<div id="2" style="
+z-index:5;
+position:absolute;
+  left:475px;
+   top:1540px;
+    width:75px;
+     height:60px;
+      border-radius:40%;
+       background: rgb(103, 212, 216)">
+
+</div>
+
+
+
+</div>
+
+<div id="3" style="
+ z-index:5;
+  position:absolute;
+   left:473px;
+    top:1440px;
+     width:20px;
+      height:20px;
+       border-radius:60%;
+        background: rgb(103, 212, 216)">
+    
+       
+</div>
+
+</div>
+
+<div id="4" style="
+ z-index:5;
+  position:absolute;
+   left:490px;
+    top:1458px;
+     width:20px;
+    height:20px;
+  border-radius:60%;
+ background: rgb(103, 212, 216)">
+</div>
+
+
+<script>
+var simbolo = [];
+var colors = ['DodgerBlue','MidnightBlue','LightSeaGreen','PaleGreen','MediumVioletRed'];
+  for(w=2;w<=4;w++){
+    simbolo[w] = document.getElementById(w);
+  }
+
+  setInterval(function(){
+    var col=Math.floor(Math.random() * colors.length);
+    for(w=2;w<=4;w++){      
+        simbolo[w].style.backgroundColor = colors[col];
+    }
+  },400)
+
+
+</script>
+  
+
+
+<!-- quimica -->
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-right"><a href="#">Regresar arriba</a></p>
