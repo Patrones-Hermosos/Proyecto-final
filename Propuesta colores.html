@@ -394,15 +394,7 @@
      height: 60px;
      width: 40px;"
      ></div>
-     <script>
-        setInterval(function(){
-          var r = Math.floor(255*(Math.random()));
-          var g = Math.floor(255*(Math.random()));
-          var b = Math.floor(255*(Math.random()));        
-          var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
-          for (i=1; i<17; i++){
-            document.getElementById(i).style.background = color;}},700)
-      </script>
+ 
     
    </div>
 <!--Signo de suma-->
@@ -495,22 +487,15 @@ background: rgb(43, 14, 173);">
 </div>
 
 <script>
-    var simbolo = [];
-      for(w=9;w<=16;w++){
-        simbolo[w] = document.getElementById('r'.concat(w));
-      }
+        setInterval(function(){
+          var r = Math.floor(255*(Math.random()));
+          var g = Math.floor(255*(Math.random()));
+          var b = Math.floor(255*(Math.random()));        
+          var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+          for (i=1; i<17; i++){
+            document.getElementById(i).style.background = color;}},700)
+      </script>
     
-      // empezamos el setInterval()
-      setInterval(function(){
-          // pasamos a traves de la lista simbolo
-        for(w=0;w<=27;w++){
-            // cambiamos el color de una manera aleatoria
-            // estamos cambiando colores usando el sistema de hexadecimal y por eso necesitamos concatenar un "#" con el color
-            simbolo[w].style.background = "#" + Math.floor(Math.random()*16777215).toString(16);
-        }
-      },1000)
-     </script>
-
 
 <!-- imagen obra -->
   
