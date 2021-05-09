@@ -564,16 +564,184 @@ position:absolute;
   border-radius:60%;
  background: rgb(103, 212, 216)">
 </div>
+<div id= "r13" style="
+z-index: 5;
+position: absolute;
+left: 250px;
+top: 125px;
+width: 300px;
+height: 150px;
+border-radius: 0%;
+background: rgb(77, 75, 75);">
+</div>
+
+<div id= "r14" style="
+z-index: 5;
+position: absolute;
+left: 330px;
+top: 275px;
+width: 130px;
+height: 30px;
+border-radius: 0%;
+background: rgb(63, 62, 62);">
+</div>
+
+<div id= "r15" style="
+z-index: 5;
+position: absolute;
+left: 295px;
+top: 305px;
+width: 200px;
+height: 45px;
+border-radius: 0%;
+background: rgb(77, 75, 75);">
+</div>
+
+<div id= "r16" style="
+z-index: 5;
+position: absolute;
+left: 275px;
+top: 150px;
+width: 250px;
+height: 100px;
+border-radius: 0%;
+background:rgb(252, 248, 251);">
+</div>
+
+
+<div id= "r17" style="
+z-index: 5;
+position: absolute;
+left: 290px;
+top: 170px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+
+<div id= "r18" style="
+z-index: 5;
+position: absolute;
+left: 290px;
+top: 195px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+
+<div id= "r19" style="
+z-index: 5;
+position: absolute;
+left: 290px;
+top: 220px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id= "r20" style="
+z-index: 5;
+position: absolute;
+left: 310px;
+top: 170px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id= "r21" style="
+z-index: 5;
+position: absolute;
+left: 310px;
+top: 195px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id= "r22" style="
+z-index: 5;
+position: absolute;
+left: 310px;
+top: 220px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id= "r23" style="
+z-index: 5;
+position: absolute;
+left: 345px;
+top: 220px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id= "r24" style="
+z-index: 5;
+position: absolute;
+left: 370px;
+top: 220px;
+width: 15px;
+height: 15px;
+border-radius: 0%;
+background: blueviolet;">
+</div>
+
+<div id="r25" style="
+  z-index:5;
+  position:absolute;
+  left:495px;
+  top:215px;
+  width:25px;
+  height:25px;
+  border-radius:38%;
+  background:blueviolet">
+</div>
+
+<div id="r26" style="
+  z-index:5;
+  position:absolute;
+  left:470px;
+  top:160px;
+  width:50px;
+  height:45px;
+  border-radius:38%;
+  background:blueviolet">
+</div>
+
+
+<div id="r27" style="
+  z-index:5;
+  position:absolute;
+  left:345px;
+  top:170px;
+  width:40px;
+  height:40px;
+  border-radius:0%;
+  background:blueviolet">
+</div>
 <script>
   var simbolo = [];
-    for(w=0;w<=12;w++){
+    for(w=0;w<=27;w++){
       simbolo[w] = document.getElementById('r'.concat(w));
     }
   
     // empezamos el setInterval()
     setInterval(function(){
         // pasamos a traves de la lista simbolo
-      for(w=0;w<=12;w++){
+      for(w=0;w<=27;w++){
           // cambiamos el color de una manera aleatoria
           // estamos cambiando colores usando el sistema de hexadecimal y por eso necesitamos concatenar un "#" con el color
           simbolo[w].style.background = "#" + Math.floor(Math.random()*16777215).toString(16);
