@@ -395,17 +395,8 @@
      ></div>
    </div>
 
-   <script>
-     setInterval(function(){
-       var r = Math.floor(255*(Math.random()));
-       var g = Math.floor(255*(Math.random()));
-       var b = Math.floor(255*(Math.random()));        
-       var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
-       for (i=1; i<10; i++){
-         document.getElementById(i).style.background = color;}},700)
-   </script>
 <!--Signo de suma-->
-<div id="r0" style="
+<div id="9" style="
 z-index: 5;
 position: absolute;
 left: 1195px;
@@ -416,7 +407,7 @@ border-radius: 0%;
 background: rgb(252, 240, 3);">
 </div>
 
-<div id="r1" style="
+<div id="10" style="
 z-index: 5;
 position: absolute;
 left: 1195px;
@@ -428,7 +419,7 @@ background: rgb(252, 240, 3);
 transform: rotate(90deg)">
 </div>
 <!--Signo de resta-->
-<div id= "r2" style="
+<div id= "11" style="
 z-index: 5;
 position: absolute;
 left:900px;
@@ -439,7 +430,7 @@ border-radius: 0%;
 background: rgb(255, 13, 13);">
 </div>
 <!--Signo de multiplicación-->
-<div id="r3" style="
+<div id="12" style="
 z-index: 5;
 position: absolute;
 left: 1170px;
@@ -450,7 +441,7 @@ border-radius: 0%;
 background: rgb(245, 94, 0);
 transform: rotate(45deg)">
 </div>
-<div id="r4" style="
+<div id="13" style="
 z-index: 5;
 position: absolute;
 left: 1170px;
@@ -462,7 +453,7 @@ background: rgb(245, 94, 0);
 transform: rotate(140deg)">
 </div>
 <!--Signo de división-->
-<div id="r5" style="
+<div id="14" style="
 z-index: 5;
 position: absolute;
 left: 900px;
@@ -472,7 +463,7 @@ height: 100px;
 border-radius: 50%;
 background: rgb(43, 14, 173);">
 </div>
-<div id="r6" style="
+<div id="15" style="
 z-index: 5;
 position: absolute;
 left: 825px;
@@ -482,7 +473,7 @@ height: 100px;
 border-radius: 0%;
 background: rgb(43, 14, 173);">
 </div>
-<div id="r7" style="
+<div id="16" style="
 z-index: 5;
 position: absolute;
 left: 900px;
@@ -493,7 +484,16 @@ border-radius: 50%;
 background: rgb(43, 14, 173);">
 </div>
 
- 
+ <script>
+    setInterval(function(){
+      var r = Math.floor(255*(Math.random()));
+      var g = Math.floor(255*(Math.random()));
+      var b = Math.floor(255*(Math.random()));        
+      var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+      for (i=1; i<17; i++){
+        document.getElementById(i).style.background = color;}},700)
+  </script>
+
 
 <!-- imagen obra -->
   
@@ -735,19 +735,19 @@ background: blueviolet;">
 </div>
 <script>
   var simbolo = [];
+  var colors = ['DodgerBlue','MidnightBlue','LightSeaGreen','PaleGreen','MediumVioletRed'];
     for(w=0;w<=27;w++){
       simbolo[w] = document.getElementById('r'.concat(w));
     }
   
-    // empezamos el setInterval()
     setInterval(function(){
-        // pasamos a traves de la lista simbolo
-      for(w=0;w<=27;w++){
-          // cambiamos el color de una manera aleatoria
-          // estamos cambiando colores usando el sistema de hexadecimal y por eso necesitamos concatenar un "#" con el color
-          simbolo[w].style.background = "#" + Math.floor(Math.random()*16777215).toString(16);
-      }
-    },1000)
+    var col=Math.floor(Math.random() * colors.length);
+    for(w=10;w<=15;w++){      
+        simbolo[w].style.backgroundColor = colors[col];
+    }
+  },400)
+
+   
    </script>
 
     <!-- Niña sentada -->
