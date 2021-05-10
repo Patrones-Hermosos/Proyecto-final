@@ -740,13 +740,13 @@ background: blueviolet;">
 <script>
     var simbolo = [];
     var colors = ['DeepSkyBlue', 'Yellow','DarkMagenta', 'Red', 'LimeGreen'];
-      for(w=7;w<=27;w++){
+      for(w=0;w<=27;w++){
         simbolo[w] = document.getElementById(w);
       }
     
       setInterval(function(){
         var col=Math.floor(Math.random() * colors.length);
-        for(w=7;w<=27;w++){      
+        for(w=10;w<=15;w++){      
             simbolo[w].style.backgroundColor = colors[col];
         }
       },150)
