@@ -564,12 +564,14 @@ position:absolute;
   border-radius:60%;
  background: rgb(103, 212, 216)">
 </div>
-  <!-- Ciencia -->
+  
+  
+  <!-- Programacion -->
 <div id= "r13" style="
 z-index: 5;
 position: absolute;
-left: 250px;
-top: 125px;
+left: 110px;
+top: 1600px;
 width: 300px;
 height: 150px;
 border-radius: 0%;
@@ -579,8 +581,8 @@ background: rgb(77, 75, 75);">
 <div id= "r14" style="
 z-index: 5;
 position: absolute;
-left: 330px;
-top: 275px;
+left: 190px;
+top: 1750px;
 width: 130px;
 height: 30px;
 border-radius: 0%;
@@ -590,8 +592,8 @@ background: rgb(63, 62, 62);">
 <div id= "r15" style="
 z-index: 5;
 position: absolute;
-left: 295px;
-top: 305px;
+left: 155px;
+top: 1780px;
 width: 200px;
 height: 45px;
 border-radius: 0%;
@@ -601,8 +603,8 @@ background: rgb(77, 75, 75);">
 <div id= "r16" style="
 z-index: 5;
 position: absolute;
-left: 275px;
-top: 150px;
+left: 135px;
+top: 1625px;
 width: 250px;
 height: 100px;
 border-radius: 0%;
@@ -613,8 +615,8 @@ background:rgb(252, 248, 251);">
 <div id= "r17" style="
 z-index: 5;
 position: absolute;
-left: 290px;
-top: 170px;
+left: 150px;
+top: 1645px;
 width: 15px;
 height: 15px;
 border-radius: 0%;
@@ -625,8 +627,8 @@ background: blueviolet;">
 <div id= "r18" style="
 z-index: 5;
 position: absolute;
-left: 290px;
-top: 195px;
+left: 150px;
+top: 1670px;
 width: 15px;
 height: 15px;
 border-radius: 0%;
@@ -637,8 +639,8 @@ background: blueviolet;">
 <div id= "r19" style="
 z-index: 5;
 position: absolute;
-left: 290px;
-top: 220px;
+left: 150px;
+top: 1695px;
 width: 15px;
 height: 15px;
 border-radius: 0%;
@@ -648,8 +650,8 @@ background: blueviolet;">
 <div id= "r20" style="
 z-index: 5;
 position: absolute;
-left: 310px;
-top: 170px;
+left: 170px;
+top: 1645px;
 width: 15px;
 height: 15px;
 border-radius: 0%;
@@ -659,8 +661,8 @@ background: blueviolet;">
 <div id= "r21" style="
 z-index: 5;
 position: absolute;
-left: 310px;
-top: 195px;
+left: 170px;
+top: 1670px;
 width: 15px;
 height: 15px;
 border-radius: 0%;
@@ -670,8 +672,8 @@ background: blueviolet;">
 <div id= "r22" style="
 z-index: 5;
 position: absolute;
-left: 310px;
-top: 220px;
+left: 170px;
+top: 1695px;
 width: 15px;
 height: 15px;
 border-radius: 0%;
@@ -681,8 +683,8 @@ background: blueviolet;">
 <div id= "r23" style="
 z-index: 5;
 position: absolute;
-left: 345px;
-top: 220px;
+left: 205px;
+top: 1695px;
 width: 15px;
 height: 15px;
 border-radius: 0%;
@@ -692,8 +694,8 @@ background: blueviolet;">
 <div id= "r24" style="
 z-index: 5;
 position: absolute;
-left: 370px;
-top: 220px;
+left: 230px;
+top: 1695px;
 width: 15px;
 height: 15px;
 border-radius: 0%;
@@ -703,8 +705,8 @@ background: blueviolet;">
 <div id="r25" style="
   z-index:5;
   position:absolute;
-  left:495px;
-  top:215px;
+  left:355px;
+  top:1690px;
   width:25px;
   height:25px;
   border-radius:38%;
@@ -714,8 +716,8 @@ background: blueviolet;">
 <div id="r26" style="
   z-index:5;
   position:absolute;
-  left:470px;
-  top:160px;
+  left:330px;
+  top:1635px;
   width:50px;
   height:45px;
   border-radius:38%;
@@ -726,29 +728,32 @@ background: blueviolet;">
 <div id="r27" style="
   z-index:5;
   position:absolute;
-  left:345px;
-  top:170px;
+  left:205px;
+  top:1645px;
   width:40px;
   height:40px;
   border-radius:0%;
   background:blueviolet">
 </div>
-<script>
-  var simbolo = [];
-  var colors = ['DodgerBlue','MidnightBlue','LightSeaGreen','PaleGreen','MediumVioletRed'];
-    for(w=0;w<=27;w++){
-      simbolo[w] = document.getElementById('r'.concat(w));
-    }
-  
-    setInterval(function(){
-    var col=Math.floor(Math.random() * colors.length);
-    for(w=10;w<=15;w++){      
-        simbolo[w].style.backgroundColor = colors[col];
-    }
-  },400)
 
-   
-   </script>
+
+<script>
+    var simbolo = [];
+    var colors = ['DeepSkyBlue', 'Yellow','DarkMagenta', 'Red', 'LimeGreen'];
+      for(w=7;w<=27;w++){
+        simbolo[w] = document.getElementById(w);
+      }
+    
+      setInterval(function(){
+        var col=Math.floor(Math.random() * colors.length);
+        for(w=7;w<=27;w++){      
+            simbolo[w].style.backgroundColor = colors[col];
+        }
+      },150)
+    
+    
+    </script>
+
 
     <!-- Niña sentada -->
   </div>
